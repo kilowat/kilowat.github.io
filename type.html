@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/css/main.bundle.css" />
 
     <!--<link rel="preload" href="../fonts/Roboto-Regular.ttf" as="font" type="font/ttf" crossorigin>-->
-    <title>Главная</title>
+    <title>Онлайн курс "Академический рисунок"</title>
   </head>
   <body>
     <div id="app">
@@ -238,8 +238,8 @@
         <div
           class="section-block"
           style="
-            --section-mobile-bg-url: url('/img/bg-index-mobile.jpg');
-            --section-desktop-bg-url: url('/img/bg-index.jpg');
+            --section-mobile-bg-url: url('/img/bg-all-eduction-mobile.jpg');
+            --section-desktop-bg-url: url('/img/bg-all-eduction.jpg');
           "
         >
           <div class="container">
@@ -249,36 +249,78 @@
               </a>
             </div>
 
-            <div class="section-margin">
-              <h1 class="section-title">Художественная школа <span>Онлайн</span></h1>
-              <div class="section-text">
-                <span>Лицензированная школа</span><span>с онлайн - уроками по рисованию для любого</span
-                ><span>возраста и уровня подготовки</span>
+            <div class="section-type__wrapper">
+              <div class="section-type__left">
+                <h1 class="section-title">
+                  <span> Онлайн курс</span><span> "Академический </span><span> рисунок"</span>
+                </h1>
+                <div class="section-text">
+                  <span>Этот курс подходит для детей и взрослых любого</span
+                  ><span>возраста, состоит из 6 уроков! Вас ждет 6 уроков по</span
+                  ><span>академическомурисунку простым карандашом.</span>
+
+                  <div class="section-link">
+                    <a href="#" title="#" class="btn btn-accent">Записаться на курс</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="section-type__right">
+                <ul class="table">
+                  <li class="table-row">
+                    <div class="setion-type__item-pic table-cell">
+                      <svg class="svg-icon calback-icon">
+                        <use xlink:href="/sprites/spritemap.svg#sprite-calback"></use>
+                      </svg>
+                    </div>
+                    <div class="section-type__item-text table-cell">Старт обучения сразу после оплатышколе</div>
+                  </li>
+
+                  <li class="table-row">
+                    <div class="setion-type__item-pic table-cell">
+                      <svg class="svg-icon inet-icon">
+                        <use xlink:href="/sprites/spritemap.svg#sprite-inet"></use>
+                      </svg>
+                    </div>
+                    <div class="section-type__item-text table-cell">Онлайн формат обучения</div>
+                  </li>
+
+                  <li class="table-row">
+                    <div class="setion-type__item-pic table-cell">
+                      <svg class="svg-icon geo-icon">
+                        <use xlink:href="/sprites/spritemap.svg#sprite-geo"></use>
+                      </svg>
+                    </div>
+                    <div class="section-type__item-text table-cell">С любого устройства и из любой точки мира</div>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-        <section class="about">
+        <section class="info-work">
           <div class="container">
-            <div class="about__wrapper">
-              <h2 class="about__title text-center">Художественная школа "Империя Пикчер"</h2>
-              <div class="about__text">
-                <p>
-                  Добро пожаловать в онлайн школу «Империя Пикчер» – место, где каждый сможет научиться рисовать. Курсы
-                  начинаются для детей от 4+ и далее без ограничения возраста. С нуля можно научиться основам
-                  изобразительного искусства, освоить классические художественные инструменты и повысить свой уровень
-                  мастерства.
-                </p>
-                <p>-</p>
-                <p>
-                  Так же наша школа существует не только в интернете, она находится в Краснодаре, где открыто 6
-                  филиалов, в которых обучается более 500 детей!
-                </p>
+            <div class="info-work__list">
+              <div class="info-work__item">
+                <div class="info-work__value">6 уроков</div>
+                <div class="info-work__data">Рисунок простым карандашом для начинающих</div>
+              </div>
+              <div class="info-work__item">
+                <div class="info-work__value">Обратная связь</div>
+                <div class="info-work__data">Ответы преподавателя по каждой работеначинающих</div>
+              </div>
+              <div class="info-work__item">
+                <div class="info-work__value">Доступ</div>
+                <div class="info-work__data">После оплаты Вы получаете доступ к курсу на всегда</div>
+              </div>
+              <div class="info-work__item">
+                <div class="info-work__value">490 рублей</div>
+                <div class="info-work__data">Стоимость за весь курс состоящий из пяти уроков</div>
               </div>
             </div>
           </div>
         </section>
-        <section class="doc-info block-bg-color">
+        <section class="doc-info">
           <div class="container">
             <div class="doc-info__list">
               <div class="doc-info__item">
@@ -314,250 +356,317 @@
             </div>
           </div>
         </section>
-        <section class="courses popular-courses theme-cover">
+
+        <section class="learning grey-bg">
           <div class="container">
-            <h2 class="title-cmp">Популярные курсы</h2>
+            <h2 class="title-cmp">Программа обучения</h2>
+            <div class="title-descr">
+              <span>Курс "Академический рисунок" состоит из 6</span>
+              <span>уроков</span>
+            </div>
+            <div class="learning__list">
+              <items-slider v-cloak class="v-slider-top-placeholder" :slide-count="4">
+                <div class="learning__item swiper-slide">
+                  <div class="learning__pic">
+                    <!--540x308-->
+                    <img src="/uploads/article.jpg" alt="" />
+                  </div>
+                  <div class="learning_content">
+                    <div class="learning__name">Цветок простым карандашем</div>
+                  </div>
+                </div>
+
+                <div class="learning__item swiper-slide">
+                  <div class="learning__pic">
+                    <!--540x308-->
+                    <img src="/uploads/article.jpg" alt="" />
+                  </div>
+                  <div class="learning_content">
+                    <div class="learning__name">Цветок простым карандашем</div>
+                  </div>
+                </div>
+
+                <div class="learning__item swiper-slide">
+                  <div class="learning__pic">
+                    <!--540x308-->
+                    <img src="/uploads/article.jpg" alt="" />
+                  </div>
+                  <div class="learning_content">
+                    <div class="learning__name">Цветок простым карандашем</div>
+                  </div>
+                </div>
+
+                <div class="learning__item swiper-slide">
+                  <div class="learning__pic">
+                    <!--540x308-->
+                    <img src="/uploads/article.jpg" alt="" />
+                  </div>
+                  <div class="learning_content">
+                    <div class="learning__name">Цветок простым карандашем</div>
+                  </div>
+                </div>
+
+                <div class="learning__item swiper-slide">
+                  <div class="learning__pic">
+                    <!--540x308-->
+                    <img src="/uploads/article.jpg" alt="" />
+                  </div>
+                  <div class="learning_content">
+                    <div class="learning__name">Цветок простым карандашем</div>
+                  </div>
+                </div>
+
+                <div class="learning__item swiper-slide">
+                  <div class="learning__pic">
+                    <!--540x308-->
+                    <img src="/uploads/article.jpg" alt="" />
+                  </div>
+                  <div class="learning_content">
+                    <div class="learning__name">Цветок простым карандашем</div>
+                  </div>
+                </div>
+              </items-slider>
+            </div>
+            <div class="courses__see-detail text-center">
+              <a href="#" class="btn btn-accent" title="#">Записаться на курс</a>
+            </div>
+          </div>
+        </section>
+        <section class="edu-descr block-bg-color">
+          <div class="container">
+            <div class="edu-descr__list">
+              <div class="edu-descr__item">
+                <div class="edu-descr__pic">
+                  <svg class="svg-icon light-fill" style="width: 63px; height: 57px">
+                    <use xlink:href="/sprites/spritemap.svg#sprite-rocket"></use>
+                  </svg>
+                </div>
+                <div class="edu-descr__name">Начните сейчас</div>
+                <div class="edu-descr__text">
+                  Курс доступен сразу после оплаты! Выберите удобную для вас дату старта. Пересматривайте уроки столько
+                  раз, сколько вам нужно!
+                </div>
+              </div>
+              <div class="edu-descr__item">
+                <div class="edu-descr__pic">
+                  <svg class="svg-icon light-fill" style="width: 65px; height: 56px">
+                    <use xlink:href="/sprites/spritemap.svg#sprite-phone-h"></use>
+                  </svg>
+                </div>
+                <div class="edu-descr__name">Личный кабинет</div>
+                <div class="edu-descr__text">
+                  Курс доступен в персональном личном кабинете на нашей образовательной платформе в формате
+                  видео-уроков.
+                </div>
+              </div>
+              <div class="edu-descr__item">
+                <div class="edu-descr__pic">
+                  <svg class="svg-icon light-fill" style="width: 56px; height: 65px">
+                    <use xlink:href="/sprites/spritemap.svg#sprite-like"></use>
+                  </svg>
+                </div>
+                <div class="edu-descr__name">Обратная связь</div>
+                <div class="edu-descr__text">
+                  Загружайте готовые работы в личный кабинет. Преподаватель общается с вами письменно и разбирает каждую
+                  вашу работу!
+                </div>
+              </div>
+              <div class="edu-descr__item">
+                <div class="edu-descr__pic">
+                  <svg class="svg-icon light-fill" style="width: 63px; height: 57px">
+                    <use xlink:href="/sprites/spritemap.svg#sprite-zachot"></use>
+                  </svg>
+                </div>
+                <div class="edu-descr__name">Работайте над ошибками</div>
+                <div class="edu-descr__text">
+                  Доступ к курсу открывается всегда! В течение этого времени вы можете повторять пройденное, общаться с
+                  другими студентами курса и задавать вопросы преподавателю.
+                </div>
+              </div>
+              <div class="edu-descr__item">
+                <div class="edu-descr__pic">
+                  <svg class="svg-icon light-fill" style="width: 65px; height: 56px">
+                    <use xlink:href="/sprites/spritemap.svg#sprite-sert"></use>
+                  </svg>
+                </div>
+                <div class="edu-descr__name">Официальные документы</div>
+                <div class="edu-descr__text">
+                  Наша школа имеет лицензию на осуществление образовательной деятельности и зарегистрированный товарный
+                  знак в государственном реестре!
+                </div>
+              </div>
+              <div class="edu-descr__item">
+                <div class="edu-descr__pic">
+                  <svg class="svg-icon light-fill" style="width: 56px; height: 65px">
+                    <use xlink:href="/sprites/spritemap.svg#sprite-gd"></use>
+                  </svg>
+                </div>
+                <div class="edu-descr__name">Формат обучения</div>
+                <div class="edu-descr__text">
+                  Мы предлагаем удобный формат обучения, Вы сами выбираете, когда и где проходить обучение, а наши
+                  опытные преподаватели будут поддерживать вас!
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div class="register-info">
+          <div class="container">
+            <h2 class="title-cmp">Стоимость курса "Академический рисунок"</h2>
+            <div class="title-descr">Шесть уроков по рисунку карандашом</div>
+            <div class="register-info__wrapper">
+              <div class="register-info__pic-cell">
+                <img src="/img/academ-pic.png" alt="#" />
+              </div>
+              <div class="register-info__text-cell">
+                <div class="register-info__name">
+                  <span>Курс по рисунку</span>
+                  <span>"Академический рисунок"</span>
+                </div>
+                <div class="register-info__descr">
+                  <span class="small-t">6 уроков по рисунку</span>
+                </div>
+                <div class="register-info__price">
+                  <span class="cur-price">490 руб.</span> <span class="old-price">790 руб.</span>
+                </div>
+                <div class="register-info__link">
+                  <a href="#" title="#" class="btn btn-accent">Зарегестрироваться</a>
+                </div>
+                <div class="register-info__content">
+                  <ul>
+                    <li><strong>* Цена -</strong>490 рублей за 6 уроков</li>
+                    <li><strong>* Обратная связь -</strong> 24/7, текст, аудио связь на весь срок обучения</li>
+                    <li>
+                      <strong>* Формат обучения -</strong> онлайн, обучайтесь где и когда угодно из любой точки мира
+                    </li>
+                    <li><strong>* Личный кабинет -</strong> после оплаты откроется доступ ко всем урокам</li>
+                    <li><strong>* Доступ -</strong> после оплаты неограниченный доступ к урокам</li>
+                    <li>-</li>
+                    <li>
+                      <strong>490 рублей -</strong> это стоимость полного курса "Академический рисунок" с доступом
+                      навсегда! После оплаты Вам будет открыт доступ в личный кабинет где будет проходить обучение. В
+                      эту стоимость входит 6 уроков, а так же обратная связь от преподавателя на все время обучения.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="advantage no-top-padding">
+          <div class="container">
+            <h2 class="title-cmp">Все, что необходимо для курса</h2>
+            <div class="title-descr">Все, что необходимо для заочного обучения</div>
+            <div class="advantage__list">
+              <div class="advantage__item">
+                <div class="advantage__pic">
+                  <svg class="svg-icon light-fill" style="width: 77px; height: 69px">
+                    <use xlink:href="/sprites/spritemap.svg#sprite-palitra"></use>
+                  </svg>
+                </div>
+                <div class="advantage__name">Материалы</div>
+                <div class="advantage__text">
+                  Самые простые акварельные краски, кисти, палитра, карандаш, ластик и бумага
+                </div>
+              </div>
+              <div class="advantage__item">
+                <div class="advantage__pic">
+                  <svg class="svg-icon light-fill" style="width: 82px; height: 67px">
+                    <use xlink:href="/sprites/spritemap.svg#sprite-gd"></use>
+                  </svg>
+                </div>
+                <div class="advantage__name">Компьютер или телефон</div>
+                <div class="advantage__text">
+                  Вам не нужно никуда ехать и подстраивать свои планы под расписание преподавателя
+                </div>
+              </div>
+              <div class="advantage__item">
+                <div class="advantage__pic">
+                  <svg class="svg-icon light-fill" style="width: 81px; height: 66px">
+                    <use xlink:href="/sprites/spritemap.svg#sprite-wifi"></use>
+                  </svg>
+                </div>
+                <div class="advantage__name">Интернет</div>
+                <div class="advantage__text">
+                  Формат онлайн-обучения. Рисуйте когда угодно из любой точки земного шара
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reviews block-bg-color">
+          <div class="container">
+            <h2 class="title-cmp">Отзывы</h2>
+            <div class="title-descr">
+              <span>Вы можете разместить отзыв имеющий отношение к данному</span>
+              <span>курсу. И порекомендоват его други нашим учащимся.</span>
+            </div>
+          </div>
+        </div>
+        <section class="courses last-article theme-contain">
+          <div class="container">
+            <h2 class="title-cmp">Похожие курсы</h2>
             <div class="courses__list">
               <div class="courses__item">
                 <div class="courses__pic">
-                  <!--550x740-->
-                  <img src="/uploads/course-cover-1.jpg" alt="" />
+                  <!--540x308-->
+                  <img src="/uploads/article.jpg" alt="" />
                 </div>
                 <div class="courses__content">
-                  <div class="courses__name">Заочное обучение</div>
+                  <div class="courses__name">Цветок простым карандашем</div>
                   <div class="courses__text">17 работ скетч маркерами, что бы стать професионалом</div>
                   <div class="courses__detail">
-                    <a href="#" class="btn btn-transparent s-size" title="#">Подробнее</a>
+                    <a href="#" class="btn s-size" title="#">Подробнее</a>
                   </div>
                 </div>
               </div>
 
               <div class="courses__item">
                 <div class="courses__pic">
-                  <!--550x740-->
-                  <img src="/uploads/course-cover-1.jpg" alt="" />
+                  <!--540x308-->
+                  <img src="/uploads/article.jpg" alt="" />
                 </div>
                 <div class="courses__content">
-                  <div class="courses__name">Заочное обучение</div>
+                  <div class="courses__name">Цветок простым карандашем</div>
                   <div class="courses__text">17 работ скетч маркерами, что бы стать професионалом</div>
                   <div class="courses__detail">
-                    <a href="#" class="btn btn-transparent s-size" title="#">Подробнее</a>
+                    <a href="#" class="btn s-size" title="#">Подробнее</a>
                   </div>
                 </div>
               </div>
 
               <div class="courses__item">
                 <div class="courses__pic">
-                  <!--550x740-->
-                  <img src="/uploads/course-cover-1.jpg" alt="" />
+                  <!--540x308-->
+                  <img src="/uploads/article.jpg" alt="" />
                 </div>
                 <div class="courses__content">
-                  <div class="courses__name">Заочное обучение</div>
+                  <div class="courses__name">Цветок простым карандашем</div>
                   <div class="courses__text">17 работ скетч маркерами, что бы стать професионалом</div>
                   <div class="courses__detail">
-                    <a href="#" class="btn btn-transparent s-size" title="#">Подробнее</a>
+                    <a href="#" class="btn s-size" title="#">Подробнее</a>
                   </div>
                 </div>
               </div>
 
               <div class="courses__item">
                 <div class="courses__pic">
-                  <!--550x740-->
-                  <img src="/uploads/course-cover-1.jpg" alt="" />
+                  <!--540x308-->
+                  <img src="/uploads/article.jpg" alt="" />
                 </div>
                 <div class="courses__content">
-                  <div class="courses__name">Заочное обучение</div>
+                  <div class="courses__name">Цветок простым карандашем</div>
                   <div class="courses__text">17 работ скетч маркерами, что бы стать професионалом</div>
                   <div class="courses__detail">
-                    <a href="#" class="btn btn-transparent s-size" title="#">Подробнее</a>
+                    <a href="#" class="btn s-size" title="#">Подробнее</a>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="courses__see-detail text-center">
-              <a href="#" class="btn btn-accent" title="#">Смотреть все</a>
-            </div>
-          </div>
-        </section>
-        <section class="courses all-courses theme-contain block-bg-color">
-          <div class="container">
-            <h2 class="title-cmp">Все курсы</h2>
-            <div class="courses__list">
-              <div class="courses__item">
-                <div class="courses__pic">
-                  <!--550x410-->
-                  <img src="/uploads/course-1.jpg" alt="" />
-                </div>
-                <div class="courses__content">
-                  <div class="courses__name">Скетчинг от А до Я</div>
-                  <div class="courses__text">17 работ скетч маркерами, что бы стать професионалом</div>
-                  <div class="courses__detail">
-                    <a href="#" class="btn" title="#">Подробнее <span class="detail-ic">></span></a>
-                    <button class="btn btn-icon">
-                      <svg class="to-fish-icon">
-                        <use xlink:href="/sprites/spritemap.svg#sprite-heart"></use>
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="courses__item">
-                <div class="courses__pic">
-                  <!--550x410-->
-                  <img src="/uploads/course-1.jpg" alt="" />
-                </div>
-                <div class="courses__content">
-                  <div class="courses__name">Скетчинг от А до Я</div>
-                  <div class="courses__text">17 работ скетч маркерами, что бы стать професионалом</div>
-                  <div class="courses__detail">
-                    <a href="#" class="btn" title="#">Подробнее <span class="detail-ic">></span></a>
-                    <button class="btn btn-icon">
-                      <svg class="to-fish-icon">
-                        <use xlink:href="/sprites/spritemap.svg#sprite-heart"></use>
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="courses__item">
-                <div class="courses__pic">
-                  <!--550x410-->
-                  <img src="/uploads/course-1.jpg" alt="" />
-                </div>
-                <div class="courses__content">
-                  <div class="courses__name">Скетчинг от А до Я</div>
-                  <div class="courses__text">17 работ скетч маркерами, что бы стать професионалом</div>
-                  <div class="courses__detail">
-                    <a href="#" class="btn" title="#">Подробнее <span class="detail-ic">></span></a>
-                    <button class="btn btn-icon">
-                      <svg class="to-fish-icon">
-                        <use xlink:href="/sprites/spritemap.svg#sprite-heart"></use>
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="courses__item">
-                <div class="courses__pic">
-                  <!--550x410-->
-                  <img src="/uploads/course-1.jpg" alt="" />
-                </div>
-                <div class="courses__content">
-                  <div class="courses__name">Скетчинг от А до Я</div>
-                  <div class="courses__text">17 работ скетч маркерами, что бы стать професионалом</div>
-                  <div class="courses__detail">
-                    <a href="#" class="btn" title="#">Подробнее <span class="detail-ic">></span></a>
-                    <button class="btn btn-icon">
-                      <svg class="to-fish-icon">
-                        <use xlink:href="/sprites/spritemap.svg#sprite-heart"></use>
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="courses__see-detail text-center">
-            <a href="#" class="btn btn-accent" title="#">Смотреть все</a>
-          </div>
-        </section>
-        <section class="sections theme-courses col-3">
-          <div class="container">
-            <h2 class="title-cmp">Курсы по тематикам</h2>
-            <div class="sections__list">
-              <div class="sections__item">
-                <div class="sections__pic">
-                  <!--744x550-->
-                  <img src="/uploads/theme-course.jpg" alt="" />
-                </div>
-                <div class="sections__content">
-                  <div class="sections__name">Скетчинг</div>
-                  <div class="sections__text">17 работ скетч маркерами, что бы стать професионалом</div>
-                  <div class="sections__detail">
-                    <a href="#" class="btn btn-transparent" title="#">Подробнее <span class="detail-ic">></span></a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="sections__item">
-                <div class="sections__pic">
-                  <!--744x550-->
-                  <img src="/uploads/theme-course.jpg" alt="" />
-                </div>
-                <div class="sections__content">
-                  <div class="sections__name">Скетчинг</div>
-                  <div class="sections__text">17 работ скетч маркерами, что бы стать професионалом</div>
-                  <div class="sections__detail">
-                    <a href="#" class="btn btn-transparent" title="#">Подробнее <span class="detail-ic">></span></a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="sections__item">
-                <div class="sections__pic">
-                  <!--744x550-->
-                  <img src="/uploads/theme-course.jpg" alt="" />
-                </div>
-                <div class="sections__content">
-                  <div class="sections__name">Скетчинг</div>
-                  <div class="sections__text">17 работ скетч маркерами, что бы стать професионалом</div>
-                  <div class="sections__detail">
-                    <a href="#" class="btn btn-transparent" title="#">Подробнее <span class="detail-ic">></span></a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="sections__item">
-                <div class="sections__pic">
-                  <!--744x550-->
-                  <img src="/uploads/theme-course.jpg" alt="" />
-                </div>
-                <div class="sections__content">
-                  <div class="sections__name">Скетчинг</div>
-                  <div class="sections__text">17 работ скетч маркерами, что бы стать професионалом</div>
-                  <div class="sections__detail">
-                    <a href="#" class="btn btn-transparent" title="#">Подробнее <span class="detail-ic">></span></a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="sections__item">
-                <div class="sections__pic">
-                  <!--744x550-->
-                  <img src="/uploads/theme-course.jpg" alt="" />
-                </div>
-                <div class="sections__content">
-                  <div class="sections__name">Скетчинг</div>
-                  <div class="sections__text">17 работ скетч маркерами, что бы стать професионалом</div>
-                  <div class="sections__detail">
-                    <a href="#" class="btn btn-transparent" title="#">Подробнее <span class="detail-ic">></span></a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="sections__item">
-                <div class="sections__pic">
-                  <!--744x550-->
-                  <img src="/uploads/theme-course.jpg" alt="" />
-                </div>
-                <div class="sections__content">
-                  <div class="sections__name">Скетчинг</div>
-                  <div class="sections__text">17 работ скетч маркерами, что бы стать професионалом</div>
-                  <div class="sections__detail">
-                    <a href="#" class="btn btn-transparent" title="#">Подробнее <span class="detail-ic">></span></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="courses__see-detail text-center">
-              <a href="#" class="btn btn-accent" title="#">Смотреть все</a>
             </div>
           </div>
         </section>
-        <div class="sections adult-children-courses col-2 block-bg-color">
+        <!--fix padding-->
+        <div class="sections adult-children-courses col-2 block-bg-color" style="padding-bottom: 0">
           <div class="container">
             <div class="sections__list">
               <div class="sections__item">
@@ -589,165 +698,6 @@
             </div>
           </div>
         </div>
-        <section class="courses last-article theme-contain">
-          <div class="container">
-            <h2 class="title-cmp">Полезные статьи</h2>
-            <div class="courses__list">
-              <div class="courses__item">
-                <div class="courses__pic">
-                  <!--540x308-->
-                  <img src="/uploads/article.jpg" alt="" />
-                </div>
-                <div class="courses__content">
-                  <div class="courses__name">Цветок простым карандашем</div>
-                  <div class="courses__text">17 работ скетч маркерами, что бы стать професионалом</div>
-                  <div class="courses__detail">
-                    <a href="#" class="btn s-size" title="#">Подробнее</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="courses__item">
-                <div class="courses__pic">
-                  <!--540x308-->
-                  <img src="/uploads/article.jpg" alt="" />
-                </div>
-                <div class="courses__content">
-                  <div class="courses__name">Цветок простым карандашем</div>
-                  <div class="courses__text">17 работ скетч маркерами, что бы стать професионалом</div>
-                  <div class="courses__detail">
-                    <a href="#" class="btn s-size" title="#">Подробнее</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="courses__item">
-                <div class="courses__pic">
-                  <!--540x308-->
-                  <img src="/uploads/article.jpg" alt="" />
-                </div>
-                <div class="courses__content">
-                  <div class="courses__name">Цветок простым карандашем</div>
-                  <div class="courses__text">17 работ скетч маркерами, что бы стать професионалом</div>
-                  <div class="courses__detail">
-                    <a href="#" class="btn s-size" title="#">Подробнее</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="courses__item">
-                <div class="courses__pic">
-                  <!--540x308-->
-                  <img src="/uploads/article.jpg" alt="" />
-                </div>
-                <div class="courses__content">
-                  <div class="courses__name">Цветок простым карандашем</div>
-                  <div class="courses__text">17 работ скетч маркерами, что бы стать професионалом</div>
-                  <div class="courses__detail">
-                    <a href="#" class="btn s-size" title="#">Подробнее</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="courses__see-detail text-center">
-            <a href="#" class="btn btn-accent" title="#">Смотреть все</a>
-          </div>
-        </section>
-        <section class="learn-proc block-bg-color">
-          <div class="container">
-            <h2 class="title-cmp">Процесс обучения</h2>
-            <div class="learn-proc__list">
-              <div class="learn-proc__item">
-                <div class="learn-proc__pic">
-                  <!--540x530-->
-                  <img src="/uploads/540x530.png" alt="" />
-                </div>
-                <div class="learn-proc__content">
-                  <div class="learn-proc__name">Возраст</div>
-                  <div class="learn-proc__text">Начинать обучение можно с 4+ лет, далее ограничений нет</div>
-                </div>
-              </div>
-
-              <div class="learn-proc__item">
-                <div class="learn-proc__pic">
-                  <!--540x530-->
-                  <img src="/uploads/540x530.png" alt="" />
-                </div>
-                <div class="learn-proc__content">
-                  <div class="learn-proc__name">Формат</div>
-                  <div class="learn-proc__text">Онлайн-обучение, рисуйте когда угодно из любой точки земного шара</div>
-                </div>
-              </div>
-
-              <div class="learn-proc__item">
-                <div class="learn-proc__pic">
-                  <!--540x530-->
-                  <img src="/uploads/540x530.png" alt="" />
-                </div>
-                <div class="learn-proc__content">
-                  <div class="learn-proc__name">Курсы</div>
-                  <div class="learn-proc__text">Более 50 курсов или 250 уроков в разных направлениях и стилях</div>
-                </div>
-              </div>
-
-              <div class="learn-proc__item">
-                <div class="learn-proc__pic">
-                  <!--540x530-->
-                  <img src="/uploads/540x530.png" alt="" />
-                </div>
-                <div class="learn-proc__content">
-                  <div class="learn-proc__name">Результат</div>
-                  <div class="learn-proc__text">
-                    Обучаясь на любом из курсов, познаете новое и получите хорошие эмоции
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="how-learn">
-          <div class="container">
-            <h2 class="title-cmp">Как проходит обучение</h2>
-            <div class="how-learn__list">
-              <div class="how-learn__item">
-                <div class="how-learn__pic">
-                  <svg class="svg-icon light-fill" style="width: 90px; height: 90px">
-                    <use xlink:href="/sprites/spritemap.svg#sprite-rocket"></use>
-                  </svg>
-                </div>
-                <div class="how-learn__name">Начните сейчас</div>
-                <div class="how-lear__text">
-                  Курс доступен сразу после оплаты! Выберите удобную для вас дату старта. Пересматривайте уроки столько
-                  раз, сколько вам нужно!
-                </div>
-              </div>
-              <div class="how-learn__item">
-                <div class="how-learn__pic">
-                  <svg class="svg-icon light-fill" style="width: 80px; height: 60px">
-                    <use xlink:href="/sprites/spritemap.svg#sprite-lk"></use>
-                  </svg>
-                </div>
-                <div class="how-learn__name">Личный кабинет</div>
-                <div class="how-lear__text">
-                  Доступ к урокам в личном кабинете на нашей образовательной платформе в формате видео-уроков.
-                </div>
-              </div>
-              <div class="how-learn__item">
-                <div class="how-learn__pic">
-                  <svg class="svg-icon light-fill" style="width: 90px; height: 90px">
-                    <use xlink:href="/sprites/spritemap.svg#sprite-gphone"></use>
-                  </svg>
-                </div>
-                <div class="how-learn__name">Обратная связь</div>
-                <div class="how-lear__text">
-                  Преподаватель общается с вами письменно и разбирает каждую вашу работу, направляя Вас к лучшему
-                  результату!
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
         <section class="site-author block-bg-color">
           <div class="container">
             <div class="site-author__wrapper">
