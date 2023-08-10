@@ -1,0 +1,479 @@
+
+
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name="description" content="Text">
+    <link rel="stylesheet" href="/css/main.bundle.css">
+    <title>Главная</title>
+  </head>
+  <body class="body">
+    <div class="overlay"></div>
+    <nav-drawer class="nav-drawer">
+      <div class="nav-drawer__header">
+        <div class="logo">
+          <a href="/" title="Орфаскоп">
+            <img class="logo-img" src="/img/logo.svg" alt="Орфаскоп">
+          </a>
+        </div>
+        <close-menu>
+          <button class="btn btn-close">
+            <svg class="svg-icon close-icon"><use xlink:href="/sprites/spritemap.svg#sprite-close"></use></svg>
+          </button>
+        </close-menu>
+      </div>
+      <div class="drawer__search-row">
+        <div class="search">
+          <div class="search__wrapper">
+            <input class="input-text input-search" type="text" placeholder="название препарата или заболевания ...">
+            <button class="btn btn-secondary btn-search">Найти</button>
+          </div>
+          <div class="search-help">
+            Начните вводить название препарата или заболевания, например трихопол 
+          </div>
+        </div>
+      </div>
+      <div class="drawer__menu-row">
+        <ul class="drawer__menu">
+          <li>
+            <a href="#" title="#">Заболевания</a>
+          </li>
+          <li>
+            <a href="#" title="#">Лекарства</a>
+          </li>
+          <li>
+            <a href="#" title="#">Исследования</a>
+          </li>
+          <li>
+            <a href="#" title="#">Клинические случаи</a>
+          </li>
+          <li>
+            <a href="#" title="#">Учреждения</a>
+          </li>             
+        </ul>
+      </div>
+      <div class="drawer__auth-row">
+        <ul>
+          <li>
+            <a href="#" class="btn btn-auth with-icon full" title="Войти">
+              <svg class="svg-icon user-icon"><use xlink:href="/sprites/spritemap.svg#sprite-user"></use></svg>
+              <span>Войти</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="btn full link-underline" title="Регистрация">
+              <span>Регистрация</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="drawer__add-content-row">
+        <div class="btn-row">
+          <button class="btn full btn-secondary-border">+ Добавить материал</button>
+        </div>
+        <div class="text-descr text-small">
+          каждый может добавить свой
+          материал бесплатно
+        </div>
+      </div>
+    </nav-drawer>
+    <header class="header header-bg">
+      <div class="nav-panel-m">
+        <div class="container nav-panel-m__container">
+          <div class="logo">
+            <a href="/" title="Орфаскоп">
+              <img class="logo-img" src="/img/logo.svg" alt="Орфаскоп">
+            </a>
+          </div>
+          <div class="nav-panel-m__actions">
+            <div class="nav-panel-m__action-item">
+              <a href="#" title="#">
+                <svg class="svg-icon user-icon"><use xlink:href="/sprites/spritemap.svg#sprite-user"></use></svg>
+              </a>
+            </div>
+            <div class="nav-panel-m__action-item">
+              <nav-menu>
+                <button class="btn btn-drawer">
+                  <svg class="svg-icon drawer-menu-icon"><use xlink:href="/sprites/spritemap.svg#sprite-drawer-menu"></use></svg>
+                </button>
+              </nav-menu>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav-panel">
+        <div class="container nav-panel__row">
+          <div class="logo">
+            <a href="/" title="Орфаскоп">
+              <img class="logo-img" src="/img/logo.svg" alt="Орфаскоп">
+            </a>
+          </div>
+          <nav class="top-nav">
+            <ul>
+              <li>
+                <a href="#" title="#">
+                  Заболевания
+                </a>
+              </li>
+              <li>
+                <a href="#" title="#">
+                  Лекарства
+                </a>
+              </li>
+              <li>
+                <a href="#" title="#">
+                  Исследования
+                </a>
+              </li>
+              <li>
+                <a href="#" title="#">
+                  Клинические случаи
+                </a>
+              </li>
+              <li>
+                <a href="#" title="#">
+                  Учреждения
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="auth-block">
+            <ul>
+              <li>
+                <a href="#" class="btn btn-auth with-icon full" title="Войти">
+                  <svg class="svg-icon user-icon"><use xlink:href="/sprites/spritemap.svg#sprite-user"></use></svg>
+                  <span>Войти</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="btn-link full" title="Регистрация">Регистрация</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="header-content container">
+        
+          <div class="main-block">
+            <div class="main-block__row main-title__row">
+              <div class="main-title main-title__cell">
+                <span class="h1 main-title__text-1">Регист препаратов и технологий</span>
+                <span class="main-title__text-2">для лечения <a href="#" title="#" class="link-underline main-title__text-3"><span>редких заболеваний</span></a></span>
+              </div>
+              <div class="main-search__cell">
+                <div class="search">
+                  <div class="search__wrapper">
+                    <input class="input-text input-search" type="text" placeholder="название препарата или заболевания ...">
+                    <button class="btn btn-secondary btn-search">Найти</button>
+                  </div>
+                  <div class="search-help">
+                    Начните вводить название препарата или заболевания, например трихопол 
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="main-block__row info-row">
+              <div class="info-list">
+                <div class="info-item">
+                  <div class="info-item__title">2985</div>
+                  <div class="info-item__text">
+                    настоящих 
+                    исследований
+                  </div>
+                </div>
+                <div class="info-item">
+                  <div class="info-item__title">242</div>
+                  <div class="info-item__text">
+                    каталог редких
+                    заболеваний
+                  </div>
+                </div>
+                <div class="info-item">
+                  <div class="info-item__title">750</div>
+                  <div class="info-item__text">
+                    клинических 
+                    случаев
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+      </div> 
+    </header>
+    <main class="main">
+
+      
+
+
+<div class="main-login gap-m-bottom-1 gap-p-top-1">
+  <div class="main-login__h container gap-m-bottom-1">
+    <h2 class="h2 margin-zero">Доступ в каталог</h2>
+    <div class="h_text">
+      <svg class="svg-icon info-icon"><use xlink:href="/sprites/spritemap.svg#sprite-info"></use></svg>
+      <div class="t_text-content">
+        для получения доступа к информации в каталоге зарегистрируйтесь, 
+        выбрав соответствующий блок
+      </div>
+    </div>
+  </div>
+  <div class="container main-login__container">
+    <a class="main-login__cell" title="#" href="#">
+      <div class="content-row">
+        <div class="main-login__wrapper">
+          <div class="main-login__title link-underline">
+          <span>Для врачей</span> 
+          </div>
+          <div class="main-login__content">
+            <div class="main-login__text">При регистрации в качестве врача необходимо будет подтвердить свой статус, приложив соответствующие документы.</div>
+            <div class="main-login__text-2">После подтверждения вы сможете пользоваться каталогом.</div>
+          </div>
+        </div>
+        <div class="main-login__picture">
+          <img src="/img/login-doctor.svg" alt="#">
+      </div>
+      </div>
+      <div class="btn-row">
+        <button class="btn btn-tertiary full h-60">
+          <span>Зарегистрироваться как врач</span>
+        </button>
+      </div>
+    </a>
+    <a class="main-login__cell" href="#" title="#">
+      <div class="content-row">
+        <div class="main-login__wrapper">
+          <div class="main-login__title link-underline">
+           <span>Для пациентов</span>
+          </div>
+          <div class="main-login__content">
+            <div class="main-login__text">
+              При регистрации в качестве пациента, вы получаете возможность задать вопрос врачу по конкретному препарату или заболеванию.
+            </div>
+          </div>
+        </div>
+        <div class="main-login__picture">
+          <img src="/img/login-user.svg" alt="#">
+      </div>
+      </div>
+      <div class="btn-row">
+        <button class="btn btn-tertiary full h-60" href="#" title="#">
+         Зарегистрироваться как пациент
+        </button>
+      </div>
+    </a>
+  </div>
+</div> 
+<div class="container gap-m-bottom-1">
+  <a class="bn">
+    <picture>
+      <source media="(max-width: 480px)" srcset="/uploads/bn-1-m.png">
+      <img src="/uploads/bn-1.png" alt="#">
+    </picture>
+  </a>
+</div>
+<div class="about gap-p-top-1 gap-p-bottom-1">
+  <div class="container about__container">
+    <div class="about__left">
+      <h1 class="h2">
+        <div class="about__logo"><img src="/img/logo-small.svg" class="logo-icon" alt=""></div>
+        ОРФАСКОП — регистр технологий 
+      </h1>
+      <div class="about__title-text">
+        Составлена практикующими врачами для пациентов
+      </div>
+    </div>
+    <div class="about__right">
+      <p class="text size-2 b">
+        Это компания, которая занимается предоставлением медицинских услуг в области информационных технологий.
+      </p>
+      <p>
+        Она была основана в 2004 году и с тех пор стала одним из лидеров в своей отрасли. Компания предоставляет широкий спектр услуг, включая разработку программного обеспечения для медицинских учреждений, создание сайтов для клиник и врачей, а также консультации по вопросам информационной безопасности
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="top-content gap-m-bottom-1">
+  <div class="container top-content__container">
+    <div class="top-news">
+      <h2 class="h2">Последние обновления</h2>
+      <div class="top-news__list">
+        <div class="top-news__item">
+          <div class="top-news__name">
+            <a href="#" title="#">Гиперлипопротеинемия - симптомы и лечение</a>
+          </div>
+          <div class="top-news__tag">
+            <a href="#" title="#">Травмотология</a>
+          </div>
+        </div>
+        <div class="top-news__item">
+          <div class="top-news__name">Это состояние является частным случаем дислипидемии</div>
+          <div class="top-news__tag">
+            <a href="#" title="#">Внутренние болезни</a>
+          </div>
+        </div>
+        <div class="top-news__item">
+          <div class="top-news__name">Закрытый перелом - симптомы и лечение</div>
+          <div class="top-news__tag">
+            <a href="#" title="#">Внутренние болезни</a>
+          </div>
+        </div>
+        <div class="top-news__item">
+          <div class="top-news__name">Перелом позвоночника</div>
+          <div class="top-news__tag">
+            <a href="#" title="#">Внутренние болезни</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="top-articles">
+      <div class="top-articles__list">
+        <div class="top-articles__item">
+          <div class="top-articles__name">Перелом позвоночника (spinal fracture) — это тяжёлая травма</div>
+          <div class="top-articles__tag">
+            <a href="#" title="#">Травмотология</a>
+          </div>
+        </div>
+        <div class="top-articles__item">
+          <div class="top-articles__name">От чего зависит тяжесть повреждения</div>
+          <div class="top-articles__tag">
+            <a href="#" title="#">Внутренние болезни</a>
+          </div>
+        </div>
+        <div class="top-articles__item">
+          <div class="top-articles__name">Что такое пневмоторакс? Причины возникновения, диагностику</div>
+          <div class="top-articles__tag">
+            <a href="#" title="#">Внутренние болезни</a>
+          </div>
+        </div>
+        <div class="top-articles__item">
+          <div class="top-articles__name">Симптомы повреждения магистральных кровеносных сосудов</div>
+          <div class="top-articles__tag">
+            <a href="#" title="#">Внутренние болезни</a>
+          </div>
+        </div>
+        <div class="top-articles__item">
+          <div class="top-articles__name">Повреждение магистральных кровеносных сосудов - симптомы и лечение</div>
+          <div class="top-articles__tag">
+            <a href="#" title="#">Внутренние болезни</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="top-spec gap-m-bottom-1">
+  <div class="container top-spec__container">
+    <div class="top-spec__list">
+      <a href="#" title="#" class="top-spec__item">
+        <img src="/uploads/1.png" alt="">
+      </a>
+      <a href="#" title="#" class="top-spec__item">
+        <img src="/uploads/2.png" alt="">
+      </a>
+      <a href="#" title="#" class="top-spec__item">
+        <img src="/uploads/3.png" alt="">
+      </a>
+      <a href="#" title="#" class="top-spec__item">
+        <img src="/uploads/4.png" alt="">
+      </a>
+      <a href="#" title="#" class="top-spec__item">
+        <img src="/uploads/5.png" alt="">
+      </a>
+    </div>
+    <div class="top-spec__title-wrapper">
+      <div class="top-spec__title h2">
+        <span class="top-spec__text-1">более</span> <span class="secondary-color top-spec__text-2">2000+ 
+          <svg class="svg-icon v-icon"><use xlink:href="/sprites/spritemap.svg#sprite-v"></use></svg>
+        </span>
+        <span class="top-spec__text-3">проверенных специалистов</span>
+      </div>
+      <div class="h_text">
+        <svg class="svg-icon info-icon"><use xlink:href="/sprites/spritemap.svg#sprite-info"></use></svg>
+        <div class="t_text-content">
+          Платформа предоставляет быстрый и удобный поиск по заданным параметрам клинических исследований, медицинских учреждений, исследователей и пациентов для участия и проведения исследований
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </main>
+  <footer class="footer background">
+    <div class="container footer__container">
+      <div class="footer-left">
+        <div class="logo footer-logo">
+          <a href="/" title="Орфаскоп">
+            <img class="logo-img" src="/img/logo.svg" alt="Орфаскоп">
+          </a>
+        </div>
+        <div class="coop-text">
+          Информация, представленная на сайте, не может быть использована для постановки диагноза, назначения лечения и не заменяет прием врача.
+        </div>
+        <div class="confrim-text">
+          <a href="#" title="#" class="link-underline">Пользовательское соглашение</a>
+        </div>
+        <div class="cens-text">
+          <a href="#" title="#" class="link-underline">Возрастной ценз 18+</a>
+        </div>
+      </div>
+      <div class="footer-middle">
+        <div class="logo logo__footer-mobile">
+          <a href="/" title="Орфаскоп">
+            <img class="logo-img" src="/img/logo.svg" alt="Орфаскоп">
+          </a>
+        </div>
+        <div class="bottom-menu">
+          <ul>
+            <li>
+              <span class="menu-title">Основная информация</span>
+            </li>
+            <li>
+              <a href="#" title="#">Заболевания</a>
+            </li>
+            <li>
+              <a href="#" title="#">Лекарства</a>
+            </li>
+            <li>
+              <a href="#" title="#">Исследования</a>
+            </li>
+            <li>
+              <a href="#" title="#">Клинические случаи</a>
+            </li>
+            <li>
+              <a href="#" title="#">Учреждения</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <span class="menu-title">Условия использования</span>
+            </li>
+            <li>
+              <a href="#" title="#">Пользовательское соглашение</a>
+            </li>
+            <li>
+              <a href="#" title="#">Обработка персональных данных</a>
+            </li>
+            <li>
+              <a href="#" title="#">Публикация материалов</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-right">
+        <div class="btn-row">
+          <button class="btn full btn-secondary-border">+ Добавить материал</button>
+        </div>
+        <div class="text-descr text-small">
+          каждый может добавить свой
+          материал бесплатно
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="/js/main.bundle.js"></script>  
+</body>
+</html>
+
