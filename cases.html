@@ -1,0 +1,751 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
+    <meta name="description" content="Text" />
+    <link rel="stylesheet" href="/css/main.bundle.css" />
+    <title>Клинические случаи</title>
+  </head>
+  <body class="body">
+    <div class="overlay"></div>
+    <nav-drawer class="nav-drawer">
+      <div class="nav-drawer__header">
+        <div class="logo">
+          <a href="/" title="Орфаскоп">
+            <img class="logo-img" src="/img/logo.svg" alt="Орфаскоп" />
+          </a>
+        </div>
+        <close-menu>
+          <button class="btn btn-close">
+            <svg class="svg-icon close-icon"><use xlink:href="/sprites/spritemap.svg#sprite-close"></use></svg>
+          </button>
+        </close-menu>
+      </div>
+      <div class="drawer__search-row">
+        <div class="search">
+          <div class="search__wrapper">
+            <input class="input-text input-search" type="text" placeholder="название препарата или заболевания ..." />
+            <button class="btn btn-secondary btn-search">Найти</button>
+          </div>
+          <div class="search-help">Начните вводить название препарата или заболевания, например трихопол</div>
+        </div>
+      </div>
+      <div class="drawer__menu-row">
+        <ul class="drawer__menu">
+          <li>
+            <a href="#" title="#">Заболевания</a>
+          </li>
+          <li>
+            <a href="#" title="#">Лекарства</a>
+          </li>
+          <li>
+            <a href="#" title="#">Исследования</a>
+          </li>
+          <li>
+            <a href="#" title="#">Клинические случаи</a>
+          </li>
+          <li>
+            <a href="#" title="#">Учреждения</a>
+          </li>
+        </ul>
+      </div>
+      <div class="drawer__auth-row">
+        <ul>
+          <li>
+            <a href="#" class="btn btn-auth with-icon full" title="Войти">
+              <svg class="svg-icon user-icon"><use xlink:href="/sprites/spritemap.svg#sprite-user"></use></svg>
+              <span>Войти</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="btn full link-underline" title="Регистрация">
+              <span>Регистрация</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="drawer__add-content-row">
+        <div class="btn-row">
+          <button class="btn full btn-secondary-border">+ Добавить материал</button>
+        </div>
+        <div class="text-descr text-small">каждый может добавить свой материал бесплатно</div>
+      </div>
+    </nav-drawer>
+    <header class="header">
+      <div class="nav-panel-m">
+        <div class="container nav-panel-m__container">
+          <div class="logo">
+            <a href="/" title="Орфаскоп">
+              <img class="logo-img" src="/img/logo.svg" alt="Орфаскоп" />
+            </a>
+          </div>
+          <div class="nav-panel-m__actions">
+            <div class="nav-panel-m__action-item">
+              <a href="#" title="#">
+                <svg class="svg-icon user-icon"><use xlink:href="/sprites/spritemap.svg#sprite-user"></use></svg>
+              </a>
+            </div>
+            <div class="nav-panel-m__action-item">
+              <nav-menu>
+                <button class="btn btn-drawer">
+                  <svg class="svg-icon drawer-menu-icon">
+                    <use xlink:href="/sprites/spritemap.svg#sprite-drawer-menu"></use>
+                  </svg>
+                </button>
+              </nav-menu>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav-panel">
+        <div class="container nav-panel__row">
+          <div class="logo">
+            <a href="/" title="Орфаскоп">
+              <img class="logo-img" src="/img/logo.svg" alt="Орфаскоп" />
+            </a>
+          </div>
+          <nav class="top-nav">
+            <ul>
+              <li>
+                <a href="#" title="#"> Заболевания </a>
+              </li>
+              <li>
+                <a href="#" title="#"> Лекарства </a>
+              </li>
+              <li>
+                <a href="#" title="#"> Исследования </a>
+              </li>
+              <li>
+                <a href="#" title="#"> Клинические случаи </a>
+              </li>
+              <li>
+                <a href="#" title="#"> Учреждения </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="auth-block">
+            <ul>
+              <li>
+                <a href="#" class="btn btn-auth with-icon full" title="Войти">
+                  <svg class="svg-icon user-icon"><use xlink:href="/sprites/spritemap.svg#sprite-user"></use></svg>
+                  <span>Войти</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="btn-link full" title="Регистрация">Регистрация</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="header-bg-2 content-bg-2">
+        <div class="header-content container">
+          <div class="section-titlle__wrapper">
+            <div class="section-title with-button">
+              <h1 class="h1 section-title__h1">Клинические случаи</h1>
+              <button class="btn btn-quaternary wide">Добавить</button>
+            </div>
+            <div class="bread-crumbs">Главная \ Категория \ Путь до внутренней страницы</div>
+          </div>
+          <div class="case-search__wrapper">
+            <div class="caes-search__text">
+              Мы размещаем информацию о различных клинических случаях пациентов с подробным описанием
+            </div>
+            <div class="case-search">
+              <div class="case-search-input">
+                <label for="search-in" class="filter-select__label">Препарат</label>
+                <input id="search-in" type="text" placeholder="ключевое слово" class="input-text case-search-input" />
+                <span class="input-help">например омепрозол</span>
+              </div>
+              <div class="case-search-input">
+                <filter-select data-placeholoder="Название" data-label="Заболевание"></filter-select>
+              </div>
+              <div class="case-search-input case-search-btn-row">
+                <button class="btn btn-secondary h-50 full">Поиск по каталогу</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page container">
+        <div class="catalog-info gap-2">Всего в каталоге 1225 записей, отфильтровано 474</div>
+        <div class="cases__list">
+          <div class="cases-list__item">
+            <div class="cases-list__picture">
+              <svg class="svg-icon case-icon"><use xlink:href="/sprites/spritemap.svg#sprite-case"></use></svg>
+            </div>
+            <div class="cases-list__content">
+              <div class="research__tags">
+                <a href="#" title="#" class="btn btn-research-tag">Иммунология</a>
+                <a href="#" title="#" class="btn btn-research-tag">Рино</a>
+              </div>
+              <div class="cases-list__name">
+                <a href="#" title="#"
+                  >Клинико-нейрофизологическое исследование тазовых нервов у взрослых и детей с нарушением функции
+                  мочеполовой системы</a
+                >
+              </div>
+              <div class="cases-list__owner">
+                <a href="#" title="#" class="link-underline">
+                  <img src="/uploads/ava-mini.png" class="owner__ava" alt="" />
+                  <span class="cases-list__owner-link">Захаров Иван Иванович</span>
+                </a>
+              </div>
+              <div class="cases-list__preveiw-text">
+                Клиническая картина при поражении тазовых нервов и заболеваниях, сопровождающихся урологическими
+                симптомами разнообразна и неспецифична
+              </div>
+              <div class="cases-list__data-row">
+                <div class="cases-list__data">
+                  <span class="cases-list__data-name">Опубликовано </span
+                  ><span class="cases__list-data-value">Вчера 18:00</span>
+                </div>
+                <div class="cases-list__viewed">
+                  <span class="cases-list__viewed-name">
+                    <svg class="svg-icon eye-icon"><use xlink:href="/sprites/spritemap.svg#sprite-eye"></use></svg>
+                    Просмотрено </span
+                  ><span class="cases-list__viewed-value">более 3200раз</span>
+                </div>
+              </div>
+              <div class="casse-list__bottom-row">
+                <a href="#" title="#" class="btn btn-tertiary btn-200">Узнать подробнее</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cases-list__item">
+            <div class="cases-list__picture">
+              <svg class="svg-icon case-icon"><use xlink:href="/sprites/spritemap.svg#sprite-case"></use></svg>
+            </div>
+            <div class="cases-list__content">
+              <div class="research__tags">
+                <a href="#" title="#" class="btn btn-research-tag">Иммунология</a>
+                <a href="#" title="#" class="btn btn-research-tag">Рино</a>
+              </div>
+              <div class="cases-list__name">
+                <a href="#" title="#"
+                  >Клинико-нейрофизологическое исследование тазовых нервов у взрослых и детей с нарушением функции
+                  мочеполовой системы</a
+                >
+              </div>
+              <div class="cases-list__owner">
+                <a href="#" title="#" class="link-underline">
+                  <img src="/uploads/ava-mini.png" class="owner__ava" alt="" />
+                  <span class="cases-list__owner-link">Захаров Иван Иванович</span>
+                </a>
+              </div>
+              <div class="cases-list__preveiw-text">
+                Клиническая картина при поражении тазовых нервов и заболеваниях, сопровождающихся урологическими
+                симптомами разнообразна и неспецифична
+              </div>
+              <div class="cases-list__data-row">
+                <div class="cases-list__data">
+                  <span class="cases-list__data-name">Опубликовано </span
+                  ><span class="cases__list-data-value">Вчера 18:00</span>
+                </div>
+                <div class="cases-list__viewed">
+                  <span class="cases-list__viewed-name">
+                    <svg class="svg-icon eye-icon"><use xlink:href="/sprites/spritemap.svg#sprite-eye"></use></svg>
+                    Просмотрено </span
+                  ><span class="cases-list__viewed-value">более 3200раз</span>
+                </div>
+              </div>
+              <div class="casse-list__bottom-row">
+                <a href="#" title="#" class="btn btn-tertiary btn-200">Узнать подробнее</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cases-list__item">
+            <div class="cases-list__picture">
+              <svg class="svg-icon case-icon"><use xlink:href="/sprites/spritemap.svg#sprite-case"></use></svg>
+            </div>
+            <div class="cases-list__content">
+              <div class="research__tags">
+                <a href="#" title="#" class="btn btn-research-tag">Иммунология</a>
+                <a href="#" title="#" class="btn btn-research-tag">Рино</a>
+              </div>
+              <div class="cases-list__name">
+                <a href="#" title="#"
+                  >Клинико-нейрофизологическое исследование тазовых нервов у взрослых и детей с нарушением функции
+                  мочеполовой системы</a
+                >
+              </div>
+              <div class="cases-list__owner">
+                <a href="#" title="#" class="link-underline">
+                  <img src="/uploads/ava-mini.png" class="owner__ava" alt="" />
+                  <span class="cases-list__owner-link">Захаров Иван Иванович</span>
+                </a>
+              </div>
+              <div class="cases-list__preveiw-text">
+                Клиническая картина при поражении тазовых нервов и заболеваниях, сопровождающихся урологическими
+                симптомами разнообразна и неспецифична
+              </div>
+              <div class="cases-list__data-row">
+                <div class="cases-list__data">
+                  <span class="cases-list__data-name">Опубликовано </span
+                  ><span class="cases__list-data-value">Вчера 18:00</span>
+                </div>
+                <div class="cases-list__viewed">
+                  <span class="cases-list__viewed-name">
+                    <svg class="svg-icon eye-icon"><use xlink:href="/sprites/spritemap.svg#sprite-eye"></use></svg>
+                    Просмотрено </span
+                  ><span class="cases-list__viewed-value">более 3200раз</span>
+                </div>
+              </div>
+              <div class="casse-list__bottom-row">
+                <a href="#" title="#" class="btn btn-tertiary btn-200">Узнать подробнее</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cases-list__item">
+            <div class="cases-list__picture">
+              <svg class="svg-icon case-icon"><use xlink:href="/sprites/spritemap.svg#sprite-case"></use></svg>
+            </div>
+            <div class="cases-list__content">
+              <div class="research__tags">
+                <a href="#" title="#" class="btn btn-research-tag">Иммунология</a>
+                <a href="#" title="#" class="btn btn-research-tag">Рино</a>
+              </div>
+              <div class="cases-list__name">
+                <a href="#" title="#"
+                  >Клинико-нейрофизологическое исследование тазовых нервов у взрослых и детей с нарушением функции
+                  мочеполовой системы</a
+                >
+              </div>
+              <div class="cases-list__owner">
+                <a href="#" title="#" class="link-underline">
+                  <img src="/uploads/ava-mini.png" class="owner__ava" alt="" />
+                  <span class="cases-list__owner-link">Захаров Иван Иванович</span>
+                </a>
+              </div>
+              <div class="cases-list__preveiw-text">
+                Клиническая картина при поражении тазовых нервов и заболеваниях, сопровождающихся урологическими
+                симптомами разнообразна и неспецифична
+              </div>
+              <div class="cases-list__data-row">
+                <div class="cases-list__data">
+                  <span class="cases-list__data-name">Опубликовано </span
+                  ><span class="cases__list-data-value">Вчера 18:00</span>
+                </div>
+                <div class="cases-list__viewed">
+                  <span class="cases-list__viewed-name">
+                    <svg class="svg-icon eye-icon"><use xlink:href="/sprites/spritemap.svg#sprite-eye"></use></svg>
+                    Просмотрено </span
+                  ><span class="cases-list__viewed-value">более 3200раз</span>
+                </div>
+              </div>
+              <div class="casse-list__bottom-row">
+                <a href="#" title="#" class="btn btn-tertiary btn-200">Узнать подробнее</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cases-list__item">
+            <div class="cases-list__picture">
+              <svg class="svg-icon case-icon"><use xlink:href="/sprites/spritemap.svg#sprite-case"></use></svg>
+            </div>
+            <div class="cases-list__content">
+              <div class="research__tags">
+                <a href="#" title="#" class="btn btn-research-tag">Иммунология</a>
+                <a href="#" title="#" class="btn btn-research-tag">Рино</a>
+              </div>
+              <div class="cases-list__name">
+                <a href="#" title="#"
+                  >Клинико-нейрофизологическое исследование тазовых нервов у взрослых и детей с нарушением функции
+                  мочеполовой системы</a
+                >
+              </div>
+              <div class="cases-list__owner">
+                <a href="#" title="#" class="link-underline">
+                  <img src="/uploads/ava-mini.png" class="owner__ava" alt="" />
+                  <span class="cases-list__owner-link">Захаров Иван Иванович</span>
+                </a>
+              </div>
+              <div class="cases-list__preveiw-text">
+                Клиническая картина при поражении тазовых нервов и заболеваниях, сопровождающихся урологическими
+                симптомами разнообразна и неспецифична
+              </div>
+              <div class="cases-list__data-row">
+                <div class="cases-list__data">
+                  <span class="cases-list__data-name">Опубликовано </span
+                  ><span class="cases__list-data-value">Вчера 18:00</span>
+                </div>
+                <div class="cases-list__viewed">
+                  <span class="cases-list__viewed-name">
+                    <svg class="svg-icon eye-icon"><use xlink:href="/sprites/spritemap.svg#sprite-eye"></use></svg>
+                    Просмотрено </span
+                  ><span class="cases-list__viewed-value">более 3200раз</span>
+                </div>
+              </div>
+              <div class="casse-list__bottom-row">
+                <a href="#" title="#" class="btn btn-tertiary btn-200">Узнать подробнее</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cases-list__item">
+            <div class="cases-list__picture">
+              <svg class="svg-icon case-icon"><use xlink:href="/sprites/spritemap.svg#sprite-case"></use></svg>
+            </div>
+            <div class="cases-list__content">
+              <div class="research__tags">
+                <a href="#" title="#" class="btn btn-research-tag">Иммунология</a>
+                <a href="#" title="#" class="btn btn-research-tag">Рино</a>
+              </div>
+              <div class="cases-list__name">
+                <a href="#" title="#"
+                  >Клинико-нейрофизологическое исследование тазовых нервов у взрослых и детей с нарушением функции
+                  мочеполовой системы</a
+                >
+              </div>
+              <div class="cases-list__owner">
+                <a href="#" title="#" class="link-underline">
+                  <img src="/uploads/ava-mini.png" class="owner__ava" alt="" />
+                  <span class="cases-list__owner-link">Захаров Иван Иванович</span>
+                </a>
+              </div>
+              <div class="cases-list__preveiw-text">
+                Клиническая картина при поражении тазовых нервов и заболеваниях, сопровождающихся урологическими
+                симптомами разнообразна и неспецифична
+              </div>
+              <div class="cases-list__data-row">
+                <div class="cases-list__data">
+                  <span class="cases-list__data-name">Опубликовано </span
+                  ><span class="cases__list-data-value">Вчера 18:00</span>
+                </div>
+                <div class="cases-list__viewed">
+                  <span class="cases-list__viewed-name">
+                    <svg class="svg-icon eye-icon"><use xlink:href="/sprites/spritemap.svg#sprite-eye"></use></svg>
+                    Просмотрено </span
+                  ><span class="cases-list__viewed-value">более 3200раз</span>
+                </div>
+              </div>
+              <div class="casse-list__bottom-row">
+                <a href="#" title="#" class="btn btn-tertiary btn-200">Узнать подробнее</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cases-list__item">
+            <div class="cases-list__picture">
+              <svg class="svg-icon case-icon"><use xlink:href="/sprites/spritemap.svg#sprite-case"></use></svg>
+            </div>
+            <div class="cases-list__content">
+              <div class="research__tags">
+                <a href="#" title="#" class="btn btn-research-tag">Иммунология</a>
+                <a href="#" title="#" class="btn btn-research-tag">Рино</a>
+              </div>
+              <div class="cases-list__name">
+                <a href="#" title="#"
+                  >Клинико-нейрофизологическое исследование тазовых нервов у взрослых и детей с нарушением функции
+                  мочеполовой системы</a
+                >
+              </div>
+              <div class="cases-list__owner">
+                <a href="#" title="#" class="link-underline">
+                  <img src="/uploads/ava-mini.png" class="owner__ava" alt="" />
+                  <span class="cases-list__owner-link">Захаров Иван Иванович</span>
+                </a>
+              </div>
+              <div class="cases-list__preveiw-text">
+                Клиническая картина при поражении тазовых нервов и заболеваниях, сопровождающихся урологическими
+                симптомами разнообразна и неспецифична
+              </div>
+              <div class="cases-list__data-row">
+                <div class="cases-list__data">
+                  <span class="cases-list__data-name">Опубликовано </span
+                  ><span class="cases__list-data-value">Вчера 18:00</span>
+                </div>
+                <div class="cases-list__viewed">
+                  <span class="cases-list__viewed-name">
+                    <svg class="svg-icon eye-icon"><use xlink:href="/sprites/spritemap.svg#sprite-eye"></use></svg>
+                    Просмотрено </span
+                  ><span class="cases-list__viewed-value">более 3200раз</span>
+                </div>
+              </div>
+              <div class="casse-list__bottom-row">
+                <a href="#" title="#" class="btn btn-tertiary btn-200">Узнать подробнее</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cases-list__item">
+            <div class="cases-list__picture">
+              <svg class="svg-icon case-icon"><use xlink:href="/sprites/spritemap.svg#sprite-case"></use></svg>
+            </div>
+            <div class="cases-list__content">
+              <div class="research__tags">
+                <a href="#" title="#" class="btn btn-research-tag">Иммунология</a>
+                <a href="#" title="#" class="btn btn-research-tag">Рино</a>
+              </div>
+              <div class="cases-list__name">
+                <a href="#" title="#"
+                  >Клинико-нейрофизологическое исследование тазовых нервов у взрослых и детей с нарушением функции
+                  мочеполовой системы</a
+                >
+              </div>
+              <div class="cases-list__owner">
+                <a href="#" title="#" class="link-underline">
+                  <img src="/uploads/ava-mini.png" class="owner__ava" alt="" />
+                  <span class="cases-list__owner-link">Захаров Иван Иванович</span>
+                </a>
+              </div>
+              <div class="cases-list__preveiw-text">
+                Клиническая картина при поражении тазовых нервов и заболеваниях, сопровождающихся урологическими
+                симптомами разнообразна и неспецифична
+              </div>
+              <div class="cases-list__data-row">
+                <div class="cases-list__data">
+                  <span class="cases-list__data-name">Опубликовано </span
+                  ><span class="cases__list-data-value">Вчера 18:00</span>
+                </div>
+                <div class="cases-list__viewed">
+                  <span class="cases-list__viewed-name">
+                    <svg class="svg-icon eye-icon"><use xlink:href="/sprites/spritemap.svg#sprite-eye"></use></svg>
+                    Просмотрено </span
+                  ><span class="cases-list__viewed-value">более 3200раз</span>
+                </div>
+              </div>
+              <div class="casse-list__bottom-row">
+                <a href="#" title="#" class="btn btn-tertiary btn-200">Узнать подробнее</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cases-list__item">
+            <div class="cases-list__picture">
+              <svg class="svg-icon case-icon"><use xlink:href="/sprites/spritemap.svg#sprite-case"></use></svg>
+            </div>
+            <div class="cases-list__content">
+              <div class="research__tags">
+                <a href="#" title="#" class="btn btn-research-tag">Иммунология</a>
+                <a href="#" title="#" class="btn btn-research-tag">Рино</a>
+              </div>
+              <div class="cases-list__name">
+                <a href="#" title="#"
+                  >Клинико-нейрофизологическое исследование тазовых нервов у взрослых и детей с нарушением функции
+                  мочеполовой системы</a
+                >
+              </div>
+              <div class="cases-list__owner">
+                <a href="#" title="#" class="link-underline">
+                  <img src="/uploads/ava-mini.png" class="owner__ava" alt="" />
+                  <span class="cases-list__owner-link">Захаров Иван Иванович</span>
+                </a>
+              </div>
+              <div class="cases-list__preveiw-text">
+                Клиническая картина при поражении тазовых нервов и заболеваниях, сопровождающихся урологическими
+                симптомами разнообразна и неспецифична
+              </div>
+              <div class="cases-list__data-row">
+                <div class="cases-list__data">
+                  <span class="cases-list__data-name">Опубликовано </span
+                  ><span class="cases__list-data-value">Вчера 18:00</span>
+                </div>
+                <div class="cases-list__viewed">
+                  <span class="cases-list__viewed-name">
+                    <svg class="svg-icon eye-icon"><use xlink:href="/sprites/spritemap.svg#sprite-eye"></use></svg>
+                    Просмотрено </span
+                  ><span class="cases-list__viewed-value">более 3200раз</span>
+                </div>
+              </div>
+              <div class="casse-list__bottom-row">
+                <a href="#" title="#" class="btn btn-tertiary btn-200">Узнать подробнее</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="cases-list__item">
+            <div class="cases-list__picture">
+              <svg class="svg-icon case-icon"><use xlink:href="/sprites/spritemap.svg#sprite-case"></use></svg>
+            </div>
+            <div class="cases-list__content">
+              <div class="research__tags">
+                <a href="#" title="#" class="btn btn-research-tag">Иммунология</a>
+                <a href="#" title="#" class="btn btn-research-tag">Рино</a>
+              </div>
+              <div class="cases-list__name">
+                <a href="#" title="#"
+                  >Клинико-нейрофизологическое исследование тазовых нервов у взрослых и детей с нарушением функции
+                  мочеполовой системы</a
+                >
+              </div>
+              <div class="cases-list__owner">
+                <a href="#" title="#" class="link-underline">
+                  <img src="/uploads/ava-mini.png" class="owner__ava" alt="" />
+                  <span class="cases-list__owner-link">Захаров Иван Иванович</span>
+                </a>
+              </div>
+              <div class="cases-list__preveiw-text">
+                Клиническая картина при поражении тазовых нервов и заболеваниях, сопровождающихся урологическими
+                симптомами разнообразна и неспецифична
+              </div>
+              <div class="cases-list__data-row">
+                <div class="cases-list__data">
+                  <span class="cases-list__data-name">Опубликовано </span
+                  ><span class="cases__list-data-value">Вчера 18:00</span>
+                </div>
+                <div class="cases-list__viewed">
+                  <span class="cases-list__viewed-name">
+                    <svg class="svg-icon eye-icon"><use xlink:href="/sprites/spritemap.svg#sprite-eye"></use></svg>
+                    Просмотрено </span
+                  ><span class="cases-list__viewed-value">более 3200раз</span>
+                </div>
+              </div>
+              <div class="casse-list__bottom-row">
+                <a href="#" title="#" class="btn btn-tertiary btn-200">Узнать подробнее</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="gap-2"></div>
+      </div>
+
+      <div class="top-content gap-m-bottom-1">
+        <div class="container top-content__container">
+          <div class="top-news">
+            <h2 class="h2">Последние обновления</h2>
+            <div class="top-news__list">
+              <div class="top-news__item">
+                <div class="top-news__name">
+                  <a href="#" title="#">Гиперлипопротеинемия - симптомы и лечение</a>
+                </div>
+                <div class="top-news__tag">
+                  <a href="#" title="#">Травмотология</a>
+                </div>
+              </div>
+              <div class="top-news__item">
+                <div class="top-news__name">Это состояние является частным случаем дислипидемии</div>
+                <div class="top-news__tag">
+                  <a href="#" title="#">Внутренние болезни</a>
+                </div>
+              </div>
+              <div class="top-news__item">
+                <div class="top-news__name">Закрытый перелом - симптомы и лечение</div>
+                <div class="top-news__tag">
+                  <a href="#" title="#">Внутренние болезни</a>
+                </div>
+              </div>
+              <div class="top-news__item">
+                <div class="top-news__name">Перелом позвоночника</div>
+                <div class="top-news__tag">
+                  <a href="#" title="#">Внутренние болезни</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="top-articles">
+            <div class="top-articles__list">
+              <div class="top-articles__item">
+                <div class="top-articles__name">Перелом позвоночника (spinal fracture) — это тяжёлая травма</div>
+                <div class="top-articles__tag">
+                  <a href="#" title="#">Травмотология</a>
+                </div>
+              </div>
+              <div class="top-articles__item">
+                <div class="top-articles__name">От чего зависит тяжесть повреждения</div>
+                <div class="top-articles__tag">
+                  <a href="#" title="#">Внутренние болезни</a>
+                </div>
+              </div>
+              <div class="top-articles__item">
+                <div class="top-articles__name">Что такое пневмоторакс? Причины возникновения, диагностику</div>
+                <div class="top-articles__tag">
+                  <a href="#" title="#">Внутренние болезни</a>
+                </div>
+              </div>
+              <div class="top-articles__item">
+                <div class="top-articles__name">Симптомы повреждения магистральных кровеносных сосудов</div>
+                <div class="top-articles__tag">
+                  <a href="#" title="#">Внутренние болезни</a>
+                </div>
+              </div>
+              <div class="top-articles__item">
+                <div class="top-articles__name">Повреждение магистральных кровеносных сосудов - симптомы и лечение</div>
+                <div class="top-articles__tag">
+                  <a href="#" title="#">Внутренние болезни</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer background">
+      <div class="container footer__container">
+        <div class="footer-left">
+          <div class="logo footer-logo">
+            <a href="/" title="Орфаскоп">
+              <img class="logo-img" src="/img/logo.svg" alt="Орфаскоп" />
+            </a>
+          </div>
+          <div class="coop-text">
+            Информация, представленная на сайте, не может быть использована для постановки диагноза, назначения лечения
+            и не заменяет прием врача.
+          </div>
+          <div class="confrim-text">
+            <a href="#" title="#" class="link-underline">Пользовательское соглашение</a>
+          </div>
+          <div class="cens-text">
+            <a href="#" title="#" class="link-underline">Возрастной ценз 18+</a>
+          </div>
+        </div>
+        <div class="footer-middle">
+          <div class="logo logo__footer-mobile">
+            <a href="/" title="Орфаскоп">
+              <img class="logo-img" src="/img/logo.svg" alt="Орфаскоп" />
+            </a>
+          </div>
+          <div class="bottom-menu">
+            <ul>
+              <li>
+                <span class="menu-title">Основная информация</span>
+              </li>
+              <li>
+                <a href="#" title="#">Заболевания</a>
+              </li>
+              <li>
+                <a href="#" title="#">Лекарства</a>
+              </li>
+              <li>
+                <a href="#" title="#">Исследования</a>
+              </li>
+              <li>
+                <a href="#" title="#">Клинические случаи</a>
+              </li>
+              <li>
+                <a href="#" title="#">Учреждения</a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <span class="menu-title">Условия использования</span>
+              </li>
+              <li>
+                <a href="#" title="#">Пользовательское соглашение</a>
+              </li>
+              <li>
+                <a href="#" title="#">Обработка персональных данных</a>
+              </li>
+              <li>
+                <a href="#" title="#">Публикация материалов</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-right">
+          <div class="btn-row">
+            <button class="btn full btn-secondary-border">+ Добавить материал</button>
+          </div>
+          <div class="text-descr text-small">каждый может добавить свой материал бесплатно</div>
+        </div>
+      </div>
+    </footer>
+    <script src="/js/main.bundle.js"></script>
+  </body>
+</html>
